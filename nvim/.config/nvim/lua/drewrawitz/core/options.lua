@@ -38,3 +38,6 @@ opt.laststatus = 3
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- cmd height
+opt.cmdheight = 0
