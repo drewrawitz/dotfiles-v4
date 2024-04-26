@@ -30,6 +30,7 @@ return {
         "tsserver",
         "html",
         "cssls",
+        "volar",
         "tailwindcss",
         "lua_ls",
         "graphql",
