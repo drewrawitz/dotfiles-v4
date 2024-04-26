@@ -6,6 +6,9 @@ keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jj" })
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- saving
+keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file" })
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decreqent
