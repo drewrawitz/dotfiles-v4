@@ -17,8 +17,8 @@ dynamic_padding = false
 opacity = 0.9
 
 [window.padding]
-x = 25
-y = 20
+x = 15
+y = 15
 
 [font]
 
@@ -35,10 +35,10 @@ italic = { style = "Italic" }  # Inherits family from normal, Default style: Ita
 bold_italic = { style = "Bold Italic" }  # Inherits family from normal, Default style: Bold Italic
 
 # Font size in points
-size = 18
+size = 20
 
 # Offset is extra space around each character
-offset = { x = 0, y = 13 } 
+offset = { x = 0, y = 15 } 
 
 # Glyph offset determines the locations of the glyphs within their cells
 glyph_offset = { x = 0, y = 0 } 
