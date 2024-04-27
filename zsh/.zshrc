@@ -90,6 +90,8 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+export EDITOR='nvim'
+
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
@@ -146,6 +148,9 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
+
+# Tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
