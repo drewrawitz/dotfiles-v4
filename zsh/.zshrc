@@ -192,6 +192,7 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 eval "$(zoxide init zsh)"
 
 alias cd="z"
+alias lsi="yazi"
 
 
 # pnpm
