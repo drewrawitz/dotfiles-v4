@@ -1,0 +1,5 @@
+brew install tmux
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
+brew install eza
+brew install yazi ffmpegthumbnailer ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font

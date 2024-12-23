@@ -152,6 +152,9 @@ _fzf_compgen_dir() {
 # Tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
+# Python
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
+
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -202,3 +205,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
