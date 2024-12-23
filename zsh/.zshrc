@@ -186,15 +186,14 @@ load-nvmrc
 export BAT_THEME="Catppuccin Mocha"
 
 # Eza (better ls)
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --color=always --long --git --no-filesize --icons=auto --no-time --no-user --no-permissions"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Zoxide (better cd)
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
-alias cd="z"
 alias lsi="yazi"
 
 
