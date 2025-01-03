@@ -155,6 +155,10 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 # Python
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOPATH/bin
+
 # NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
