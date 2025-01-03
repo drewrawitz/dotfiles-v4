@@ -92,6 +92,26 @@ return {
           filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
         })
       end,
+      ["volar"] = function()
+        lspconfig["volar"].setup({
+          capabilities = capabilities,
+          filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+          init_options = {
+            vue = {
+              hybridMode = false,
+            },
+            typescript = {
+              tsdk = "/users/drewrawitz/www/CarbManager/taste-network/node_modules/typescript/lib",
+            },
+          },
+          on_new_config = function(new_config, new_root_dir)
+            local lib_path = vim.fs.find("node_modules/typescript/lib", { path = new_root_dir, upward = true })[1]
+            if lib_path then
+              new_config.init_options.typescript.tsdk = lib_path
+            end
+          end,
+        })
+      end,
       ["emmet_ls"] = function()
         -- configure emmet language server
         lspconfig["emmet_ls"].setup({
@@ -119,4 +139,3 @@ return {
     })
   end,
 }
-
